@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moda al Massimo with Heidi"
+            android:textColor="@color/home_screen_title_color"
+            android:textSize="@dimen/home_screen_title_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/header_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration 1 hour"
+                android:textColor="@color/home_screen_title_color"
+                android:textSize="@dimen/home_screen_title_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_rectangle"
+                android:padding="10dp"
+                android:text="HD"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/rounded_rectangle"
+                android:padding="10dp"
+                android:text="On Air"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This appears to the show description. Make sure to mention
+this in the upcoming tech meetings. This is available (its on
+the TV guide now) however the current site feed does not
+have it. Descriptions include savings/promotional message
+and event content."
+            android:textColor="@color/home_screen_title_color"
+            android:textSize="@dimen/host_description_size" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/featured_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/top_layout"
+        android:background="@color/featured_color"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/full_content_browse_fragment"
+            android:name="com.amazon.android.tv.tenfoot.ui.fragments.ContentBrowseFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/action_widget_container" />
+    </LinearLayout>
+
+
+</RelativeLayout>

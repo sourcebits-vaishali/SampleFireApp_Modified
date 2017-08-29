@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/row_frame_layout"
+        android:layout_marginBottom="@dimen/margin_87"
+        android:layout_marginEnd="@dimen/margin_105"
+        android:layout_marginStart="@dimen/margin_54"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_105"
+            android:text="Meet Our JTV Hosts"
+            android:textColor="@color/home_screen_title_color"
+            android:textSize="@dimen/home_screen_title_size" />
+
+        <TextView
+            android:id="@+id/title_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our hosts are the face of Jewelry Television. They are knowledgeable in
+the fields of jewelry and gemstones; in fact, many of them are Accredited
+Jewelry Professionals, on their way to becoming Graduate Gemologists
+through the Gemological Institute of America.
+
+Learn more about their experience and backgrounds, as well as their
+favorite gemstones, hobbies, and fashion tips.
+
+Meet the new ones or learn more about your favorites!"
+            android:textColor="@color/host_description_color"
+            android:textSize="@dimen/host_description_size" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/row_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_40" />
+
+
+</RelativeLayout>
