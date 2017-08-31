@@ -56,10 +56,10 @@ permissions and limitations under the License.
     <!-- The header's bar color (left-hand navigation bar) -->
     <color name="browse_headers_bar">@color/background</color>
     <!-- Non-selected header text color -->
-    <color name="browse_header">@color/white</color>
-    <!-- Header color when left-hand navigation bar is closed
-         and rows are showing full screen -->
-    <color name="browse_row_header">@color/white</color>
+   <!-- <color name="browse_header">@color/white</color>
+    &lt;!&ndash; Header color when left-hand navigation bar is closed
+         and rows are showing full screen &ndash;&gt;
+    <color name="browse_row_header">@color/white</color>-->
     <!-- Action widget and search orb background color -->
     <color name="search_orb">@color/accent</color>
     <!-- Header text size -->
@@ -169,5 +169,11 @@ permissions and limitations under the License.
 
     <color name="default_background">#3d3d3d</color>
     <color name="selected_background">#ffaa3f</color>
+
+
+    <color name="browse_header">@color/browse_background_color</color>
+    <!-- Header color when left-hand navigation bar is closed
+         and rows are showing full screen -->
+    <color name="browse_row_header">@color/browse_background_color</color>
 
 </resources>

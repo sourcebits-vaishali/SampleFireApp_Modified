@@ -87,6 +87,8 @@ permissions and limitations under the License.
     <string name="watch_now">Watch Now</string>
     <string name="more_about_heidi">More about Heidi</string>
 
+    <string name="featured">Featured</string>
+
 
     <string name="watch_trailer_1">Watch trailer</string>
     <string name="watch_trailer_2">FREE</string>
@@ -101,4 +103,7 @@ permissions and limitations under the License.
         Learn more about their experience and backgrounds, as well as their favorite gemstones, hobbies, and fashion
         tips.
         Meet the new ones or learn more about your favorites!</string>
+
+    <string name="current_on_air_item">Current On-Air Item</string>
+
 </resources>

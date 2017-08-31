@@ -117,19 +117,36 @@ permissions and limitations under the License.
     <!--  <dimen name="lb_browse_headers_width">160dp</dimen>-->
     <dimen name="lb_browse_rows_margin_start">270dp</dimen>
 
-    <dimen name="home_screen_title_size">57sp</dimen>
+    <dimen name="home_screen_title_size">76px</dimen>
+    <dimen name="home_screen_duration_size">38px</dimen>
+    <dimen name="home_screen_hd_size">26px</dimen>
     <dimen name="margin_96">96dp</dimen>
     <dimen name="margin_105">105dp</dimen>
-    <dimen name="margin_30">30dp</dimen>
     <dimen name="margin_87">87dp</dimen>
+    <dimen name="margin_30">30px</dimen>
+    <dimen name="margin_50">50px</dimen>
+    <dimen name="margin_72">72px</dimen>
+    <dimen name="margin_140">140px</dimen>
+    <dimen name="margin_100">100px</dimen>
+    <dimen name="margin_20">20px</dimen>
+    <dimen name="margin_10">10px</dimen>
 
-    <dimen name="host_description_size">22sp</dimen>
+    <dimen name="host_description_size">29px</dimen>
 
     <dimen name="margin_54">54dp</dimen>
     <dimen name="margin_40">40dp</dimen>
 
     <dimen name="host_card_width">187dp</dimen>
     <dimen name="host_card_height">187dp</dimen>
+
+    <dimen name="featured_layout_height">280px</dimen>
+
+    <dimen name="card_width">231dp</dimen>
+    <dimen name="card_height">176dp</dimen>
+
+    <dimen name="current_on_air_text_size">31px</dimen>
+    <dimen name="text_size_23">23px</dimen>
+    <dimen name="text_size_25">25px</dimen>
 
 
 

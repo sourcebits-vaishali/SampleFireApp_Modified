@@ -19,8 +19,8 @@ permissions and limitations under the License.
     <item android:state_focused="true" android:state_enabled="true"
           android:color="@color/action_button_text_color_focused"/>
     <item android:state_enabled="true"
-          android:color="@color/action_button_text_color"/>
+          android:color="@color/watch_now_color"/>
     <item android:state_focused="true"
           android:color="@color/action_button_text_color_focused"/>
-    <item android:color="@color/action_button_text_color"/>
+    <item android:color="@color/watch_now_color"/>
 </selector>

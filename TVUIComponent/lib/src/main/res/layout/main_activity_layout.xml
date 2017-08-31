@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:lb="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
 
-
+    <!-- Home Screen details layout-->
     <LinearLayout
         android:id="@+id/top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/margin_72"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_100"
             android:text="Moda al Massimo with Heidi"
             android:textColor="@color/home_screen_title_color"
             android:textSize="@dimen/home_screen_title_size" />
@@ -24,6 +27,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30"
             android:orientation="horizontal">
 
             <TextView
@@ -32,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:text="Duration 1 hour"
                 android:textColor="@color/home_screen_title_color"
-                android:textSize="@dimen/home_screen_title_size" />
+                android:textSize="@dimen/home_screen_duration_size" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -41,7 +45,9 @@
                 android:background="@drawable/rounded_rectangle"
                 android:padding="10dp"
                 android:text="HD"
+                android:textAllCaps="true"
                 android:textColor="@color/white"
+                android:textSize="@dimen/home_screen_hd_size"
                 android:textStyle="bold" />
 
             <TextView
@@ -51,7 +57,9 @@
                 android:background="@drawable/rounded_rectangle"
                 android:padding="10dp"
                 android:text="On Air"
+                android:textAllCaps="true"
                 android:textColor="@color/white"
+                android:textSize="@dimen/home_screen_hd_size"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -60,6 +68,7 @@
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_50"
             android:text="This appears to the show description. Make sure to mention
 this in the upcoming tech meetings. This is available (its on
 the TV guide now) however the current site feed does not
@@ -68,24 +77,48 @@ and event content."
             android:textColor="@color/home_screen_title_color"
             android:textSize="@dimen/host_description_size" />
 
+
+        <!-- Action layout-->
+        <LinearLayout
+            android:id="@+id/details_overview_actions_background"
+            android:layout_width="wrap_content"
+            android:layout_height="56dip"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <android.support.v17.leanback.widget.HorizontalGridView
+                android:id="@+id/details_overview_actions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:paddingEnd="@dimen/lb_details_v2_description_margin_end"
+                android:paddingStart="@dimen/lb_details_v2_description_margin_start"
+                lb:horizontalMargin="@dimen/lb_details_overview_action_items_margin"
+                lb:rowHeight="@dimen/lb_details_v2_actions_height" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
-
+    <!-- Featured layout row-->
     <LinearLayout
         android:id="@+id/featured_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/top_layout"
         android:background="@color/featured_color"
         android:orientation="horizontal">
 
-        <fragment
-            android:id="@+id/full_content_browse_fragment"
-            android:name="com.amazon.android.tv.tenfoot.ui.fragments.ContentBrowseFragment"
+        <FrameLayout
+            android:id="@+id/featured_frame_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:layout="@layout/action_widget_container" />
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_72" />
+
     </LinearLayout>
 
 

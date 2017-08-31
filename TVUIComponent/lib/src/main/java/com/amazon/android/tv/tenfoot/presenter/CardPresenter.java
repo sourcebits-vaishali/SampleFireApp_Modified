@@ -29,13 +29,6 @@
  */
 package com.amazon.android.tv.tenfoot.presenter;
 
-import com.amazon.android.model.content.Content;
-import com.amazon.android.model.content.ContentContainer;
-import com.amazon.android.tv.tenfoot.utils.ContentHelper;
-import com.amazon.android.utils.GlideHelper;
-import com.amazon.android.utils.Helpers;
-import com.amazon.android.tv.tenfoot.R;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -48,6 +41,12 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.amazon.android.model.content.Content;
+import com.amazon.android.model.content.ContentContainer;
+import com.amazon.android.tv.tenfoot.R;
+import com.amazon.android.tv.tenfoot.utils.ContentHelper;
+import com.amazon.android.utils.GlideHelper;
 
 /**
  * A CardPresenter is used to generate Views and bind Objects to them on demand.
@@ -95,14 +94,14 @@ public class CardPresenter extends Presenter {
         cardView.setCardType(BaseCardView.CARD_TYPE_INFO_OVER);
         cardView.setInfoVisibility(BaseCardView.CARD_REGION_VISIBLE_ALWAYS);
 
-        int CARD_WIDTH_PX = 160;
+        int CARD_WIDTH_PX = 308;
 //        mCardWidthDp = Helpers.convertPixelToDp(mContext, CARD_WIDTH_PX);
+        mCardWidthDp = (int)mContext.getResources().getDimension(R.dimen.card_width);
 
-        mCardWidthDp = (int)mContext.getResources().getDimension(R.dimen.host_card_width);
-        int CARD_HEIGHT_PX = 120;
+        int CARD_HEIGHT_PX = 235;
 //        mCardHeightDp = Helpers.convertPixelToDp(mContext, CARD_HEIGHT_PX);
+        mCardHeightDp = (int)mContext.getResources().getDimension(R.dimen.card_height);
 
-        mCardHeightDp =  (int)mContext.getResources().getDimension(R.dimen.host_card_height);
         TextView subtitle = (TextView) cardView.findViewById(R.id.content_text);
         if (subtitle != null) {
             subtitle.setEllipsize(TextUtils.TruncateAt.END);
@@ -147,6 +146,10 @@ public class CardPresenter extends Presenter {
             cardView.setContentText(contentContainer.getName());
             cardView.setMainImageDimensions(mCardWidthDp, mCardHeightDp);
             cardView.getMainImageView().setImageDrawable(mDefaultCardImage);
+        } else{
+            cardView.setContentText("Vaishali11");
+            cardView.setMainImageDimensions(mCardWidthDp, mCardHeightDp);
+            cardView.getMainImageView().setBackgroundColor(ContextCompat.getColor(mContext, R.color.white));
         }
     }
 

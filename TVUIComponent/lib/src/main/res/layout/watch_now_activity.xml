@@ -1,0 +1,96 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gradient_end"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextureView
+            android:id="@+id/texture_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_50"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:gravity="center"
+                android:text="@string/current_on_air_item"
+                android:textColor="@color/current_on_ir_item"
+                android:textSize="@dimen/current_on_air_text_size" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/description"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="DOCLM4"
+                android:textColor="@color/menu_selected"
+                android:textSize="@dimen/text_size_25" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/customer_reviews"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="Bella Luce® 41.00ctw Pink Diamond Simulant
+Rhodium Over Sterling Silver Bracelet (25.41ct…"
+                android:textColor="@color/home_screen_title_color"
+                android:textSize="@dimen/text_size_25" />
+
+            <TextView
+                android:id="@+id/customer_reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="No Reviews"
+                android:textColor="@color/home_screen_title_color"
+                android:textSize="@dimen/text_size_23" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Featured layout row-->
+    <LinearLayout
+        android:id="@+id/featured_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/top_layout"
+        android:background="@color/featured_color"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/featured_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_72" />
+
+    </LinearLayout>
+</merge>

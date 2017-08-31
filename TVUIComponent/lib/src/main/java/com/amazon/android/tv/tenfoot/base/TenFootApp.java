@@ -21,7 +21,7 @@ import com.amazon.android.tv.tenfoot.R;
 import com.amazon.android.tv.tenfoot.ui.activities.ContentBrowseActivity;
 import com.amazon.android.tv.tenfoot.ui.activities.ContentDetailsActivity;
 import com.amazon.android.tv.tenfoot.ui.activities.ContentSearchActivity;
-import com.amazon.android.tv.tenfoot.ui.activities.FullContentBrowseActivity;
+import com.amazon.android.tv.tenfoot.ui.activities.NavigationActivity;
 import com.amazon.android.tv.tenfoot.ui.activities.SplashActivity;
 
 import android.content.res.Resources;
@@ -73,7 +73,7 @@ public class TenFootApp extends ContentBrowserApplication {
                          .addAnalyticsConstantForActivity(ContentBrowseActivity.class
                                                                   .getSimpleName(),
                                                           AnalyticsTags.SCREEN_BROWSE)
-                         .addAnalyticsConstantForActivity(FullContentBrowseActivity.class
+                         .addAnalyticsConstantForActivity(NavigationActivity.class
                                                                   .getSimpleName(),
                                                           AnalyticsTags.SCREEN_BROWSE)
                          .addAnalyticsConstantForActivity(ContentSearchActivity.class

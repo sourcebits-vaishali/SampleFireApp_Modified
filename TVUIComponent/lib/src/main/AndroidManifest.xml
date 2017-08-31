@@ -58,7 +58,7 @@ permissions and limitations under the License.
 
     <application>
         <activity
-                android:name="com.amazon.android.tv.tenfoot.ui.activities.FullContentBrowseActivity"
+                android:name="com.amazon.android.tv.tenfoot.ui.activities.NavigationActivity"
                 android:screenOrientation="landscape"/>
         <activity
                 android:name="com.amazon.android.tv.tenfoot.ui.activities.ContentBrowseActivity"
@@ -76,6 +76,9 @@ permissions and limitations under the License.
         </activity>
         <activity android:name="com.amazon.android.tv.tenfoot.ui.activities.ContentSearchActivity"/>
         <activity android:name="com.amazon.android.tv.tenfoot.ui.activities.SplashActivity"/>
+        <activity
+            android:name="com.amazon.android.tv.tenfoot.ui.activities.WatchNowActivity"
+            android:exported="true"/>
         <activity android:name="com.amazon.android.uamp.ui.PlaybackActivity"/>
     </application>
 

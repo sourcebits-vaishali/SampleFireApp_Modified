@@ -511,6 +511,8 @@ public class AnalyticsTags {
      */
     public static final String SCREEN_SEARCH = "SCREEN_SEARCH";
 
+    public static final String WATCH_NOW = "WATCH_NOW";
+
     /////////////////////////////////////////////////////////////////////////
     //                  Non-Customizable other constants.                  //
     /////////////////////////////////////////////////////////////////////////
