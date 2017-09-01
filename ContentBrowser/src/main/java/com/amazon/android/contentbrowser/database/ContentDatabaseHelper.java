@@ -99,7 +99,7 @@ public class ContentDatabaseHelper extends SQLiteOpenHelper {
      * @return The full path to the database file.
      */
     String getDatabasePath(Context context) {
-        // Database Name -->  '/data/data/com.amazon.android.calypso/databases/content.db'
+        // Database Name -->  '/data/data/com.amazon.android.jtv/databases/content.db'
         return context.getDatabasePath(ContentDatabaseHelper.DATABASE_NAME).getPath();
     }
 

@@ -41,7 +41,7 @@ android {
     buildToolsVersion "25.0.0"
 
     defaultConfig {
-        applicationId "com.amazon.android.calypso"
+        applicationId "com.amazon.android.jtv"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 9
