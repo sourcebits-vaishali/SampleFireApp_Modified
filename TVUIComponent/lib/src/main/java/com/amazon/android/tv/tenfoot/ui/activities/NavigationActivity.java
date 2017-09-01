@@ -35,12 +35,12 @@ import com.amazon.android.tv.tenfoot.base.BaseActivity;
 import android.os.Bundle;
 
 /**
- * An activity class that loads FullContentBrowseFragment to browse the content with a navigation
+ * An activity class that loads NavigationActivity to browse the content with a navigation
  * bar to the left side of the rows of content.
  */
-public class FullContentBrowseActivity extends BaseActivity {
+public class NavigationActivity extends BaseActivity {
 
-    private final String TAG = FullContentBrowseActivity.class.getSimpleName();
+    private final String TAG = NavigationActivity.class.getSimpleName();
 
     /**
      * Called when the activity is first created.
@@ -49,6 +49,6 @@ public class FullContentBrowseActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.full_content_browse_activity_layout);
+        setContentView(R.layout.navigation_activity);
     }
 }
